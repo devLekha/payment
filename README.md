@@ -1,12 +1,12 @@
 # Mock Payment API
-*It is a mock api to process payments for the customers.
-*Created an endpoint to create payments in two methods:
+* It is a mock api to process payments for the customers.
+* Created an endpoint to create payments in two methods:
     *Credit Card
     *Boleto
-*Api returns the buyers information along with payment details.
-*An end point is created to check all the payments done by the client along with payment information.
+* Api returns the buyers information along with payment details.
+* An end point is created to check all the payments done by the client along with payment information.
 
-###/client route is for adding client in database
+### /client route is for adding client in database
 Request data for /client route:
 ```json
 {"name":"abc",
@@ -14,19 +14,19 @@ Request data for /client route:
 "cpf":"823.467.230-60"}
 ```
 
-###/payments route is for getting all the payments of a client
+### /payments route is for getting all the payments of a client
 Request data for /payments route:
 ```json
 {"name":"abc"}
 ```
-###/payment?type=boleto route for doing payment using boleto method
+### /payment?type=boleto route for doing payment using boleto method
 Request data for the route:
 ```json
 {"name":"abc",
 "amount":1200}
 ```
 
-###/payment?type=card route for doing payment using card method
+### /payment?type=card route for doing payment using card method
 Request data for the route:
 ```json
 {"name":"abc",
@@ -37,7 +37,7 @@ Request data for the route:
 "cvv":"031"}
 ```
 
-###Project Architecture:
+### Project Architecture:
 *config
   *db.js
 *models
@@ -49,12 +49,12 @@ Request data for the route:
 *package-lock.json
 *package.json
 
-###To install all the dependencies of the project run:
+### To install all the dependencies of the project run:
 ```node
 npm install
 ```
 
-###To start the project run the following command:
+### To start the project run the following command:
 ```node
 npm run dev
 ```
